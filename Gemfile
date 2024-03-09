@@ -71,6 +71,7 @@ group :development do
   gem 'web-console'
 
   gem 'htmlbeautifier'
+  gem 'aws-sdk-s3'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
