@@ -29,4 +29,4 @@
 
 image_url = 'https://placehold.jp/300x200.png'
 item = Item.first
-item.image.attach(io: URI.open(image_url), dammy.png)
+item.image.attach(io: URI.open(image_url), filename: 'dammy.png')
