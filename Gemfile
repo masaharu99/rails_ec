@@ -70,7 +70,6 @@ group :development do
   gem 'rubocop-rspec', require: false
   gem 'web-console'
 
-  gem 'htmlbeautifier'
   gem 'aws-sdk-s3'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
@@ -85,4 +84,8 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+end
+
+group :production do
+  gem 'aws-sdk-s3'
 end
