@@ -7,9 +7,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first
 
-item1 = Item.new(name: 'Messi', price: 999999999)
+# item1 = Item.new(name: 'Messi', price: 999999999)
 # item1.image.attach(io: File.open(Rails.root.join('app/assets/images/', 'messi.jpeg')))
-item1.save!
+# item1.save!
 # item2 = Item.new(name: 'Ronald', price: 999999999)
 # image2 = File.open(Rails.root.join('app/assets/images/ronald.jpeg').to_s)
 # item2.image.attach(io: image2, filename: 'ronald.jpeg')
@@ -26,3 +26,7 @@ item1.save!
 # image5 = File.open(Rails.root.join('app/assets/images/de_bruyne.jpeg').to_s)
 # item5.image.attach(io: image5, filename: 'de_bruyne.jpeg')
 # item5.save!
+
+image_url = 'https://placehold.jp/300x200.png'
+item = Item.first
+item.image.attach(io: URI.open(image_url), dammy.png)
