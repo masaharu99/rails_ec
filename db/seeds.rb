@@ -8,7 +8,8 @@
 #   Character.create(name: "Luke", movie: movies.first
 
 item1 = Item.new(name: 'Messi', price: 999999999)
-item1.image.attach(io: File.open(Rails.root.join('app/assets/images/', 'messi.jpeg')))
+image1 = File.open(Rails.root.join('app/assets/images/', 'messi.jpeg'))
+item1.image.attach(io: image1, filename: 'messi.jpeg')
 item1.save!
 item2 = Item.new(name: 'Ronald', price: 999999999)
 image2 = File.open(Rails.root.join('app/assets/images/ronald.jpeg').to_s)
