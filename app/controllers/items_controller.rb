@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_action :set_item, only: %i[show]
 
   def index
-    @items = Item.recent
+    @items = Item.with_attached_image.recent
   end
 
   def show
